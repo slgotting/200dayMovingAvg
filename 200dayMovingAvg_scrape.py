@@ -83,10 +83,10 @@ while True:
                                         br.addheaders = [('User-agent', 'Chrome/54.0.2840.71')]
                                         response = br.open("https://finance.yahoo.com/portfolio/p_0/view?bypass=true")
                                         br.select_form(nr=0)
-                                        br.form['username'] = 'stocksystm'
+                                        br.form['username'] = '** your username here **'
                                         response = br.submit()
                                         br.select_form(nr=0)
-                                        br.form['passwd'] = 'peo0813xme'
+                                        br.form['passwd'] = '** your password here **'
                                         response = br.submit()
                                         i+=10000
                                     except:
@@ -96,7 +96,7 @@ while True:
 
                                 print 'Login successful.'
 
-                                #Viewing the URLS to be scanned for symbols
+                                #Viewing the URLS to be scanned for symbols ** SEARCHES WATCHLIST FOR SYMBOLS ** 
                                 url = br.open('https://finance.yahoo.com/portfolio/pf_1/view/v1?bypass=true')
                                 htmltext = url.read()
                                 regex = "<tr data-row-symbol='([A-Z]{,6})'"
@@ -213,9 +213,9 @@ while True:
 
                                         mail.starttls()
 
-                                        mail.login('sgotting21@gmail.com','hq2xmo6r3')
+                                        mail.login('** email **','**mail password here**')
 
-                                        mail.sendmail('sgotting21@gmail.com',['robg77@aol.com','tbtitans21@yahoo.com'], content)
+                                        mail.sendmail('** sender email **',['** send-to email **'], content)
 
                                         mail.close()
                                     else:
