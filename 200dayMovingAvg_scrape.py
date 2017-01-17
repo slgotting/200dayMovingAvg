@@ -67,7 +67,7 @@ while True:
                                 now = datetime.datetime.now()
                                 print 'Checking at ' + now.strftime('%I:%M %p') + ' of day ' + now.strftime('%m/%d')    
                                 try:
-                                    os.remove("C:\Users\G-unit\Downloads\quotes.csv")
+                                    os.remove("** path to your quotes.csv file downloaded by the site **")
                                 except:
                                     print 'There was no quotes.csv file to delete.'
                                 i = 0
