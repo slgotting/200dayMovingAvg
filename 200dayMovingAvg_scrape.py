@@ -141,7 +141,7 @@ while True:
                                 length = 0
                                 #Searching the excel file for the symbols in the database and removing
                                 #the symbols from the database that no longer fit the desired range
-                                with open('C:\Users\G-unit\Downloads\quotes.csv', 'rb') as f:
+                                with open('** path to your quotes.csv file downloaded by the site **', 'rb') as f:
                                     while length < 10000:
                                         try:
                                             reader = csv.reader(f)
